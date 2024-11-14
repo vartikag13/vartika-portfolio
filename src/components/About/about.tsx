@@ -20,17 +20,23 @@ const About = () => {
                     <h1 className="mb-20">
                         Know Who <strong className="purple">I Am</strong>
                     </h1>
-                    <div>I'm an experienced <strong>Software Engineer</strong></div>
+                    <div>
+                        I'm an experienced <strong>Software Engineer</strong>
+                    </div>
                     building and managing Websites and Web Applications that
                     leads to the success of the overall product.
                     <br />
                     <br />
                     I'm open to new opportunities where I can contribute, learn
                     and grow. If you have a good opportunity that matches my
-                    skills and experience then don't hesitate<div> to 
-                    <strong> contact</strong> me.</div> 
+                    skills and experience then don't hesitate
+                    <div>
+                        {' '}
+                        to
+                        <strong> contact</strong> me.
+                    </div>
                 </div>
-                <div className="carousel-zone">
+                <div className="carousel-zone flex-mobile">
                     <div>
                         <Card
                             description="JavaScript"

@@ -7,7 +7,7 @@ interface CardProps {
 
 const Card = ({ logo, description }: CardProps) => {
     return (
-        <div className="logo-card">
+        <div className="logo-card mb-0">
             {logo}
             {description}
         </div>

@@ -1,5 +1,6 @@
 import './index.scss';
 import LogoTitle from '../../assets/images/logo-v.png';
+import ProfilePic from '../../assets/images/profile.png';
 
 const Home = () => {
     return (
@@ -17,6 +18,13 @@ const Home = () => {
                     CONTACT ME
                 </a>
             </div>
+            {/* <div className="carousel-zone flex-mobile">
+                <img
+                    src={ProfilePic}
+                    alt="Author at a beach in Thailand"
+                    className="profile-pic"
+                />
+            </div> */}
         </div>
     );
 };

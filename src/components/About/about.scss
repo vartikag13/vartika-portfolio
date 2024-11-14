@@ -1,5 +1,23 @@
+.conatiner {
+    width: fit-content !important;
+}
+
 .about-section {
     display: flex;
+
+    /* Responsive styles */
+    @media (max-width: 768px) {
+        padding: 20px;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+.flex-mobile {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-direction: row;
+
     /* Responsive styles */
     @media (max-width: 768px) {
         flex-direction: column;
