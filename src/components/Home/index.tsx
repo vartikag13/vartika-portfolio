@@ -1,6 +1,6 @@
 import './index.scss';
 import LogoTitle from '../../assets/images/logo-v.png';
-import ProfilePic from '../../assets/images/profile.png';
+//import ProfilePic from '../../assets/images/profile.png';
 
 const Home = () => {
     return (
