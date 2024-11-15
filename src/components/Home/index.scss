@@ -1,11 +1,17 @@
 .home-page {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    @media (max-width: 768px) {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
     .text-zone {
-        position: absolute;
-        left: 20%;
-        top: 50%;
-        transform: translateY(-50%);
-        width: 40%;
-        max-height: 90%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 20px;
 
         .no-wrap {
             text-wrap: nowrap;
@@ -14,11 +20,13 @@
 
     .profile-pic {
         display: flex;
-        top: 30%;
+        border-radius: 50%;
+        height: 350px;
         /* Responsive styles */
         @media (max-width: 768px) {
             flex-direction: column;
             align-items: center;
+            margin-top: 0px;
         }
     }
 
@@ -69,6 +77,12 @@
         margin-bottom: 20px;
     }
 
+    .two-buttons {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 200px;
+    }
     .flat-button {
         padding: 10px;
         color: #fefefe;
@@ -78,6 +92,12 @@
         font-weight: 500;
         font-size: 15px;
         font-family: 'Coolvetica';
+        border: 1px solid #976097;
+
+        &.light {
+            background-color: #fff0db;
+            color: #976097;
+        }
 
         &:hover {
             box-shadow: inset 0 0 0 5px darken(#976097, 15%);

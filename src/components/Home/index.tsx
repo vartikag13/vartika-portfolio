@@ -1,6 +1,7 @@
 import './index.scss';
 import LogoTitle from '../../assets/images/logo-v.png';
-//import ProfilePic from '../../assets/images/profile.png';
+import Resume from '../../assets/docs/VartikaGupta_Resume.pdf';
+import Pic from '../../assets/images/profile.jpg';
 
 const Home = () => {
     return (
@@ -16,17 +17,30 @@ const Home = () => {
                     web developer
                 </h1>
                 <h2>Frontend Developer / Baker</h2>
-                <a href="mailto:vartikag.13@gmail.com" className="flat-button">
-                    CONTACT ME
-                </a>
+                <div className="two-buttons">
+                    <a
+                        href="mailto:vartikag.13@gmail.com"
+                        className="flat-button"
+                    >
+                        CONTACT ME
+                    </a>
+                    <a
+                        href={Resume}
+                        className="flat-button light"
+                        target="_blank"
+                        rel="noreferrer"
+                    >
+                        RESUME
+                    </a>
+                </div>
             </div>
-            {/* <div className="carousel-zone flex-mobile">
+            <div className="profile-pic">
                 <img
-                    src={ProfilePic}
+                    src={Pic}
                     alt="Author at a beach in Thailand"
                     className="profile-pic"
                 />
-            </div> */}
+            </div>
         </div>
     );
 };
