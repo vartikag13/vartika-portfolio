@@ -63,7 +63,8 @@ const WeatherAPI = () => {
         );
         return (
             <div className="widget-container">
-                {day} - Ottawa, ON - {currentTemp}&deg;C - {date}
+                {day}&nbsp; Ottawa, ON &#9678; {currentTemp}&deg;C &#9678;{' '}
+                {date}
             </div>
         );
     }
