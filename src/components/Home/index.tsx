@@ -7,9 +7,11 @@ const Home = () => {
         <div className="container home-page">
             <div className="text-zone">
                 <h1>
-                    Hi, <br /> I'm
-                    <img src={LogoTitle} alt="Logo of the letter V" />
-                    artika
+                    Hi, <br />
+                    <span className="no-wrap">
+                        I'm <img src={LogoTitle} alt="Logo of the letter V" />
+                        artika
+                    </span>
                     <br />
                     web developer
                 </h1>

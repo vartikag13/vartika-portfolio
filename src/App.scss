@@ -1,4 +1,19 @@
+@use 'sass:map';
+
+$theme-colors-light: (
+    'primary': #fff0db,
+    'secondary': #976097,
+    'text': black
+);
+
+$theme-colors-dark: (
+    'primary': black,
+    'secondary': #976097,
+    'text': #fff0db
+);
+
 $primary-color: #fff0db;
+$secondary-color: #976097;
 
 @import 'animate.css';
 
@@ -32,5 +47,5 @@ textarea {
     margin-bottom: 0px !important;
 }
 .purple {
-    color: #976097 !important;
+    color: $secondary-color !important;
 }
