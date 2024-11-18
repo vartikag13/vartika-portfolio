@@ -37,7 +37,7 @@ const Home = () => {
             <div className="profile-pic">
                 <img
                     src={Pic}
-                    alt="Author at a beach in Thailand"
+                    alt="Author of website"
                     className="profile-pic"
                 />
             </div>

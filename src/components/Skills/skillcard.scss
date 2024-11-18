@@ -19,4 +19,24 @@
         font-size: larger;
         animation: wiggle 3s linear;
     }
+
+    /* Responsive styles */
+    @media (max-width: 768px) {
+        padding: 7px;
+        width: auto;
+        height: auto;
+        font-size: 10px;
+        margin: 20px;
+        border: 3px solid #976097;
+        box-shadow: none;
+
+        .icon {
+            font-size: 15px;
+        }
+
+        &:hover {
+            font-size: 10px;
+            animation: wiggle 3s linear;
+        }
+    }
 }

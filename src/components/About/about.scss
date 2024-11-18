@@ -7,9 +7,7 @@
 
     /* Responsive styles */
     @media (max-width: 768px) {
-        padding: 20px;
-        flex-direction: column;
-        align-items: center;
+        padding-left: 10px;
     }
 }
 .flex-mobile {
@@ -20,7 +18,7 @@
 
     /* Responsive styles */
     @media (max-width: 768px) {
-        flex-direction: column;
+        flex-direction: row;
         align-items: center;
     }
 }
