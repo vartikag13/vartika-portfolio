@@ -3,11 +3,11 @@ import Card from '../Skills/skillcard';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
     faCss3,
-    faGitAlt,
     faHtml5,
     faJava,
     faJs,
     faNodeJs,
+    faPython,
     faReact,
     faWordpress
 } from '@fortawesome/free-brands-svg-icons';
@@ -74,18 +74,18 @@ const About = () => {
                         }
                     />
                     <Card
+                        description="Python"
+                        logo={
+                            <FontAwesomeIcon icon={faPython} className="icon" />
+                        }
+                    />
+                    <Card
                         description="WordPress"
                         logo={
                             <FontAwesomeIcon
                                 icon={faWordpress}
                                 className="icon"
                             />
-                        }
-                    />
-                    <Card
-                        description="Git"
-                        logo={
-                            <FontAwesomeIcon icon={faGitAlt} className="icon" />
                         }
                     />
                 </div>
