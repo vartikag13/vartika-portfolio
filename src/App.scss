@@ -19,11 +19,20 @@ $secondary-color: #976097;
 
 body {
     background-color: $primary-color;
-    font-family: 'Helvetica Neue';
+    font-family: 'ProtoGroteskWeb Light';
 }
 @font-face {
     font-family: 'Helvetica Neue';
     src: url('./assets/fonts/helvetica-neu.ttf') format('ttf');
+}
+@font-face {
+    font-family: "ProtoGroteskWeb Light";
+    src: url("https://db.onlinewebfonts.com/t/3d4d368dfb3797128db8c1d0611d2bba.eot");
+    src: url("https://db.onlinewebfonts.com/t/3d4d368dfb3797128db8c1d0611d2bba.eot?#iefix")format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/3d4d368dfb3797128db8c1d0611d2bba.woff2")format("woff2"),
+    url("https://db.onlinewebfonts.com/t/3d4d368dfb3797128db8c1d0611d2bba.woff")format("woff"),
+    url("https://db.onlinewebfonts.com/t/3d4d368dfb3797128db8c1d0611d2bba.ttf")format("truetype"),
+    url("https://db.onlinewebfonts.com/t/3d4d368dfb3797128db8c1d0611d2bba.svg#ProtoGroteskWeb Light")format("svg");
 }
 
 @font-face {
@@ -38,7 +47,7 @@ body {
 
 input,
 textarea {
-    font-family: 'Helvetica Neue';
+    font-family: 'ProtoGroteskWeb Light';
 }
 .mb-20 {
     margin-bottom: 20px !important;
@@ -46,6 +55,15 @@ textarea {
 .mb-0 {
     margin-bottom: 0px !important;
 }
-.purple {
-    color: $secondary-color !important;
+.purple-highlight {
+    font-family: 'ProtoGroteskWeb Light';
+    background-color: #976097;
+    color: #fff0db;
+    margin-bottom: 20px;
+}
+h1{
+    font-size: 47px;
+    font-family: 'Coolvetica';
+    font-size: 400;
+    margin: 0;
 }

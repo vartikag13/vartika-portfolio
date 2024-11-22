@@ -15,13 +15,11 @@ import {
 const About = () => {
     return (
         <div className="container about-section">
-            <div className="bakery-text-zone">
+            <div className="text-zone">
                 <h1 className="mb-20">
-                    Know Who <strong className="purple">I Am</strong>
+                    Know Who <strong className="purple-highlight">&nbsp;I Am &nbsp;</strong>
                 </h1>
-                <div>
-                    I'm an experienced <strong>Software Engineer</strong>
-                </div>
+                    I'm an experienced <strong>Software Engineer </strong>
                 building and managing Websites and Web Applications that leads
                 to the success of the overall product.
                 <br />
@@ -34,9 +32,10 @@ const About = () => {
                     <strong> contact</strong> me.
                 </div>
             </div>
-            <div className="flex-mobile">
-                <div>
-                    <Card
+                <div className='flex-mobile'>
+                    
+                
+                <Card
                         description="JavaScript"
                         logo={<FontAwesomeIcon icon={faJs} className="icon" />}
                     />
@@ -59,8 +58,8 @@ const About = () => {
                             <FontAwesomeIcon icon={faCss3} className="icon" />
                         }
                     />
-                </div>
-                <div>
+                    </div>
+                <div className='flex-mobile'>
                     <Card
                         description="React"
                         logo={
@@ -88,9 +87,8 @@ const About = () => {
                             />
                         }
                     />
-                </div>
+                    </div>
             </div>
-        </div>
     );
 };
 

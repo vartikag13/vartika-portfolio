@@ -4,6 +4,9 @@
 
 .about-section {
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
     /* Responsive styles */
     @media (max-width: 768px) {

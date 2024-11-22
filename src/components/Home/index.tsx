@@ -8,15 +8,19 @@ const Home = () => {
         <div className="container home-page">
             <div className="text-zone">
                 <h1>
-                    Hi, <br />
-                    <span className="no-wrap">
+                    Hi, <span className="no-wrap">
                         I'm <img src={LogoTitle} alt="Logo of the letter V" />
                         artika
                     </span>
-                    <br />
-                    web developer
+
                 </h1>
-                <h2>Frontend Developer / Baker</h2>
+                <h2 className='purple-highlight'>&nbsp;Frontend Developer / Baker&nbsp;</h2>
+                Since 2019 I’ve made a living as a Software Engineer, creating world-class digital experiences for humans.<br />
+                In that time, I’ve been fortunate to work with excellent people at a few companies and as a consultant.
+                <br/><br/>
+                I'm amazed at how fast the world is growing in tech and always keen on learning whatever comes my way. <br />
+                Having worked on multiple national-level projects, I love to see my code translate designs to real-world websites.
+
                 <div className="two-buttons">
                     <a
                         href="mailto:vartikag.13@gmail.com"
