@@ -5,7 +5,7 @@
     @media (max-width: 768px) {
         flex-direction: column-reverse;
         align-items: center;
-        margin-top: 140px !important;
+        margin-top: 50px !important;
     }
 
     .text-zone {
@@ -20,16 +20,7 @@
         }
     }
 
-    .profile-pic {
-        display: flex;
-        border-radius: 50%;
-        height: 350px;
-        /* Responsive styles */
-        @media (max-width: 768px) {
-            flex-direction: column;
-            align-items: center;
-        }
-    }
+    
 
     h1 {
         img {

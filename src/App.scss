@@ -1,14 +1,12 @@
 @use 'sass:map';
 
 $theme-colors-light: (
-    'primary': #fff0db,
-    'secondary': #976097,
+    'bg-color': #fff0db,
     'text': black
 );
 
 $theme-colors-dark: (
-    'primary': black,
-    'secondary': #976097,
+    'bg-color': black,
     'text': #fff0db
 );
 
@@ -18,8 +16,11 @@ $secondary-color: #976097;
 @import 'animate.css';
 
 body {
-    background-color: $primary-color;
+    background-color: black;
     font-family: 'ProtoGroteskWeb Light';
+    color: #fff0db;
+
+    
 }
 @font-face {
     font-family: 'Helvetica Neue';
@@ -61,9 +62,27 @@ textarea {
     color: #fff0db;
     margin-bottom: 20px;
 }
+.purple-link {
+    color: #976097;
+    text-decoration: underline dotted;
+}
 h1{
     font-size: 47px;
     font-family: 'Coolvetica';
     font-size: 400;
     margin: 0;
+}
+
+
+.profile-pic {
+    display: flex;
+    border-radius: 50%;
+    height: 350px;
+    border: 1px solid;
+    padding: 5px;
+    /* Responsive styles */
+    @media (max-width: 768px) {
+        flex-direction: column;
+        align-items: center;
+    }
 }

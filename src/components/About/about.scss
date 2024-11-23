@@ -1,16 +1,18 @@
-.conatiner {
-    width: fit-content !important;
-}
-
 .about-section {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: center !important;
     align-items: center;
+    padding-top: 50px;
 
     /* Responsive styles */
     @media (max-width: 768px) {
         padding-left: 10px;
+        padding-top: 50px;
+    }
+
+    .text-zone{
+        text-align: center;
     }
 }
 .flex-mobile {
@@ -25,3 +27,37 @@
         align-items: center;
     }
 }
+
+.facts{
+    padding-top: 50px;
+    width: 90%;
+    
+    li{
+        list-style-image: url('../../assets/images/heart.svg');
+        padding-bottom: 20px;
+     }
+
+     .fact-pictures-section{
+        display: flex;
+        flex-direction: row;
+        margin-top: 20px;
+        justify-content: center;
+        gap: 10px;
+        
+
+        .fact-pic{
+           display: flex;
+           align-items: center;
+           justify-content: space-around;
+            height: 150px;
+            border: 1px solid;
+            padding-bottom: 2px;
+        }
+        /* Responsive styles */
+        @media (max-width: 768px) {
+            flex-direction: column;
+            align-items: center;
+        }
+     }
+}
+

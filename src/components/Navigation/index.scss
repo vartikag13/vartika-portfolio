@@ -20,14 +20,17 @@
             margin-top: -6px;
         }
     }
+    .theme-icon{
 
-    .menu-toggle {
-        display: none; /* Hidden on larger screens */
-        font-size: 1.5rem;
-        color: #fff;
-        background: none;
-        border: none;
-        cursor: pointer;
+        height: 25px;
+        padding: 3px;
+        margin-top: -1px;
+        border: 1px solid black;
+        
+        &:hover{
+            border: 1px solid;
+            border-radius: 50%;
+        }
     }
 
     .nav-links {
