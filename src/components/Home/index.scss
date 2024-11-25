@@ -5,7 +5,7 @@
     @media (max-width: 768px) {
         flex-direction: column-reverse;
         align-items: center;
-        margin-top: 50px !important;
+        margin-top: 100px !important;
     }
 
     .text-zone {
@@ -76,6 +76,7 @@
         font-size: 15px;
         font-family: 'Coolvetica';
         border: 1px solid #976097;
+        margin-bottom: 50px;
 
         &.light {
             background-color: #fff0db;

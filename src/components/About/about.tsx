@@ -11,6 +11,14 @@ import {
     faReact,
     faWordpress
 } from '@fortawesome/free-brands-svg-icons';
+import Nespresso from '../../assets/images/nespresso.png';
+import Coffee from '../../assets/images/coffee.png';
+import Thailand from '../../assets/images/thailand.png';
+import France from '../../assets/images/france.png';
+import BreadSticker from '../../assets/images/bread-sticker.png';
+// @ts-expect-error
+import PickleBall from '../../assets/images/pickleball.mp4';
+
 
 const About = () => {
     return (
@@ -84,21 +92,12 @@ const About = () => {
             </div>
             <div className='facts'>
 
-                <h2 className='facts'>Other than that...</h2>
+                <h2>Other than that...</h2>
                 <ul>
                     <li>
                 <strong className="purple-highlight">&nbsp;I like travelling!&nbsp;</strong> I have been to 7 countries so far. Which includes Thailand, USA, Canada, India,
                 France, Italy and Cuba. All of these trips have been spontaneous and were planned within a week of travelling date. May the future hold more such trips~
-                {/* <div className='fact-pictures-section'><img
-                    src={Pic}
-                    alt="Author of website"
-                    className="fact-pic"
-                        />
-                        <img
-                    src={Pic}
-                    alt="Author of website"
-                    className="fact-pic"
-                /></div> */}
+                
                     </li>
                     
                     <li>
@@ -126,6 +125,36 @@ const About = () => {
                         that I am eventually saving money by not buying it from outside.
                     </li>
                 </ul>
+                <div className='fact-pictures-section'>
+                <img
+                    src={France}
+                    alt="Author of website"
+                    className="fact-pic"
+                    />
+                    
+                    <img
+                    src={BreadSticker}
+                    alt="Author of website"
+                    className="fact-pic"
+                    />
+                    <img
+                    src={Coffee}
+                    alt="Author of website"
+                    className="fact-pic"
+                    />
+                    <img
+                    src={Nespresso}
+                    alt="Author of website"
+                    className="fact-pic"
+                    />
+                    <img
+                    src={Thailand}
+                    alt="Author of website"
+                    className="fact-pic"
+                    />
+    
+                </div>
+                <video src={PickleBall} className='video-container' loop controls autoPlay></video>
             </div>
             </div>
     );
