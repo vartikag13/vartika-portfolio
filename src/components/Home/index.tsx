@@ -1,6 +1,6 @@
 import './index.scss';
 import LogoTitle from '../../assets/images/logo-v.png';
-import Resume from '../../assets/docs/VartikaGupta_Resume.pdf';
+import Resume from '../../assets/docs/Vartika_Gupta_Resume.pdf';
 import Pic from '../../assets/images/profile.jpg';
 
 const Home = () => {
@@ -9,7 +9,7 @@ const Home = () => {
             <div className="text-zone">
                 <h1>
                     Hi, <span className="no-wrap">
-                        I'm <img src={LogoTitle} alt="Logo of the letter V" />
+                        I'm <img src={LogoTitle} className='wiggle-logo' alt="Logo of the letter V" />
                         artika
                     </span>
 

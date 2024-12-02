@@ -12,7 +12,6 @@ export const ThemeContext: Context<{
 function App() {
 
     const [theme, setTheme] = useState<string>('dark-mode');
-    console.log({theme})
     return (
         <ThemeContext.Provider value={{ setTheme, theme }}>
         <div className={theme}>

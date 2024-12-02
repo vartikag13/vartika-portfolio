@@ -22,8 +22,7 @@
 
     
 
-    h1 {
-        img {
+    .wiggle-logo {
             width: 52px;
             margin-bottom: -20px;
             margin-right: -8px;
@@ -57,7 +56,6 @@
                 transform: rotateZ(0);
             }
         }
-    }
 
     .two-buttons {
         display: flex;
