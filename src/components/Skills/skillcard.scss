@@ -15,9 +15,8 @@
     }
 
     &:hover {
-        color: #976097;
         font-size: larger;
-        animation: wiggle 3s linear;
+        animation: wiggle 2s ease;
     }
 
     /* Responsive styles */
@@ -36,7 +35,24 @@
 
         &:hover {
             font-size: 10px;
-            animation: wiggle 3s linear;
+            animation: wiggle 2s ease;
         }
     }
 }
+
+.bounce-in {
+    animation: bounce-in 2s ease;
+  }
+  @keyframes bounce-in {
+    0% {
+      opacity: 0;
+      transform: scale(.3);
+    }
+    50% {
+      opacity: 1;
+      transform: scale(1.05);
+    }
+    70% { transform: scale(.9); }
+    100% { transform: scale(1); }
+  }
+  

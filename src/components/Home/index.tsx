@@ -2,10 +2,19 @@ import './index.scss';
 import LogoTitle from '../../assets/images/logo-v.png';
 import Resume from '../../assets/docs/Vartika_Gupta_Resume.pdf';
 import Pic from '../../assets/images/profile.jpg';
+import Coin from '../../assets/images/coin.png';
+import News from '../../assets/images/news.png';
+import Pigeon from '../../assets/images/pigeon-letter.png';
+import MailHand from '../../assets/images/mail-letter.png';
+import TypingWork from '../../assets/images/typing-work.png';
+import ProjectCard from '../ProjectCard/projectcard';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faChevronCircleDown } from '@fortawesome/free-solid-svg-icons';
 
 const Home = () => {
     return (
         <div className="container home-page">
+            <div className='flex-row mb-20'>
             <div className="text-zone">
                 <h1>
                     Hi, <span className="no-wrap">
@@ -44,8 +53,59 @@ const Home = () => {
                     alt="Author of website"
                     className="profile-pic"
                 />
+                </div>
             </div>
-        </div>
+            <h2>Some of My Work {' '}
+            <FontAwesomeIcon icon={faChevronCircleDown} className="icon fade-in-down" /></h2>
+            <div className='project-wrapper'>
+            <div className='project-column'>
+            <ProjectCard
+                        description="Rebranding Websites"
+                    screenshot={TypingWork}
+                        imageAlignment='top-right'
+                        projectTileAlignment='project-tile-left'
+                        pageHref='/rebrand'
+                />
+                <ProjectCard
+                        description="Blogs"
+                    screenshot={News}
+                        imageAlignment='top-right'
+                        projectTileAlignment='project-tile-left'
+                        pageHref='/rebrand'
+                    />
+                    <ProjectCard
+                        description="Ecommerce Campaigns"
+                    screenshot={Coin}
+                        imageAlignment='top-right'
+                        projectTileAlignment='project-tile-left'
+                        pageHref='/rebrand'
+                    />
+            </div>
+            <div className='project-column'>
+            <ProjectCard
+                        description="Re-architecting Legacy Apps"
+                    screenshot={Pigeon}
+                        imageAlignment='top-left'
+                        projectTileAlignment='project-tile-right'
+                        pageHref='/rebrand'
+                />
+                <ProjectCard
+                        description="Dashboards"
+                    screenshot={MailHand}
+                        imageAlignment='bottom-left'
+                        projectTileAlignment='project-tile-right'
+                        pageHref='/rebrand'
+                    />
+                    {/* <ProjectCard
+                        description="Greener Good Campaign"
+                    screenshot={GreenerGood}
+                        imageAlignment='bottom-left'
+                        projectTileAlignment='project-tile-right'
+                        pageHref='/rebrand'
+                    /> */}
+                </div>
+                </div>
+            </div>
     );
 };
 

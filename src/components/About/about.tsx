@@ -18,6 +18,7 @@ import France from '../../assets/images/france.png';
 import BreadSticker from '../../assets/images/bread-sticker.png';
 // @ts-expect-error
 import PickleBall from '../../assets/images/pickleball.mp4';
+import { faChevronCircleDown } from '@fortawesome/free-solid-svg-icons';
 
 
 const About = () => {
@@ -92,7 +93,8 @@ const About = () => {
             </div>
             <div className='facts'>
 
-                <h2>Other than that...</h2>
+                <h2>Other Than That {' '}
+                <FontAwesomeIcon icon={faChevronCircleDown} className="icon fade-in-down" /></h2>
                 <ul>
                     <li>
                 <strong className="purple-highlight">&nbsp;I like travelling!&nbsp;</strong> I have been to 7 countries so far. Which includes Thailand, USA, Canada, India,
@@ -154,7 +156,7 @@ const About = () => {
                     />
     
                 </div>
-                <video src={PickleBall} className='video-container' loop controls autoPlay></video>
+                <video src={PickleBall} className='video-container' loop controls></video>
             </div>
             </div>
     );

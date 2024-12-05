@@ -26,7 +26,7 @@ const Navigation = () => {
     return (
         <div className="nav-bar">
             <Link to="/" className="logo-container">
-                <img className="logo wiggle-logo" src={LogoV} alt="App logo" />
+                <img className="logo gelatine" src={LogoV} alt="App logo" />
             </Link>
             <nav className='nav-links'>
                 <NavLink

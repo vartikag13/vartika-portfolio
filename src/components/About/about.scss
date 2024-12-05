@@ -39,6 +39,10 @@
         padding-bottom: 20px;
      }
 
+     li::marker{
+        animation: pulse 1s infinite ease-in-out alternate;
+     }
+
      .fact-pictures-section{
         display: flex;
         flex-direction: row;

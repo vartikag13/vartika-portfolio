@@ -1,11 +1,12 @@
 .home-page {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     @media (max-width: 768px) {
-        flex-direction: column-reverse;
+        overflow-y: scroll;
+        height: 100%;
         align-items: center;
-        margin-top: 100px !important;
+        margin-top: 20px !important;
     }
 
     .text-zone {
@@ -84,5 +85,14 @@
         &:hover {
             box-shadow: inset 0 0 0 5px darken(#976097, 15%);
         }
+    }
+}
+
+.flex-row{
+    display: flex;
+    flex-direction: row;
+    @media (max-width: 768px) {
+        flex-direction: column-reverse;
+        align-items: center;
     }
 }
